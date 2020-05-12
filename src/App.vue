@@ -1,6 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to Your Vue.js App</h1>
+    <Navbar />
+
+    <Hero />
+
+    <main>
+      test stuff here
+    </main>
+
+    <Footer />
   </div>
 </template>
+
+<script>
+import Footer from '@/components/Footer'
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
+
+export default {
+  name: 'App',
+  components: {
+    Footer,
+    Hero,
+    Navbar,
+  },
+}
+</script>
+
+<style lang="scss" scoped></style>

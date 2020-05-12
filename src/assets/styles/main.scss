@@ -1,0 +1,66 @@
+@use "_variables" as *;
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  $primaryColor: #265B6A;
+  $accentColor: #FFD5AA;
+
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, $primaryColor 21px, $accentColor 22px, $accentColor 24px, transparent 24px, transparent 67px, $accentColor 67px, $accentColor 69px, transparent 69px),
+    linear-gradient(225deg, $primaryColor 21px, $accentColor 22px, $accentColor 24px, transparent 24px, transparent 67px, $accentColor 67px, $accentColor 69px, transparent 69px)0 64px;
+  background-color: $primaryColor;
+  background-size: 64px 128px;
+
+  backdrop-filter: blur(1.5px);
+
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+#app {
+  position: relative;
+  z-index: 2;
+
+  color: #EEE;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+  overflow-y: scroll;
+}
+
+nav, footer, header, main {
+  --padding: 10px;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  @include sm { --padding: 20px; }
+  @include md { --padding: 40px; }
+  @include lg { --padding: 60px; }
+  @include xl { --padding: 80px; }
+
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+
+  position: relative;
+}
+
+main {
+  min-height: 400px;
+}
