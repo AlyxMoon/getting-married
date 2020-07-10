@@ -26,7 +26,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  margin-top: 60px;
+  margin: 60px auto 30px;
 
   color: #EEE;
   text-align: center;
