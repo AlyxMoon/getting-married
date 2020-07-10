@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="img-wrapper">
-      <img class="pure-img" src="@/assets/images/rings.png" />
+      <img class="pure-img" src="@/assets/images/rings.jpg" />
     </div>
   </section>
 </template>

@@ -6,16 +6,22 @@ html, body, #app {
 }
 
 body {
-  background-color: $primaryColor;
+  padding-bottom: 50px;
   position: relative;
   z-index: 1;
 
+  background-color: $primaryColor;
   color: white;
   font-family: 'Lora', serif;
 
   * {
     box-sizing: border-box;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 h1 {
@@ -61,6 +67,7 @@ section {
 
   h1, h2, h3, h4, h5, h6, p {
     color: white;
+    margin-bottom: 20px;
     text-shadow: $defaultTextShadow;
   }
 
