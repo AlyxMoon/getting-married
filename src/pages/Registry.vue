@@ -1,5 +1,10 @@
 <template>
   <section>
+    <h2>Registry</h2>
+
+    <p>
+      When we get a registry up, we'll put it here!
+    </p>
   </section>
 </template>
 
@@ -9,4 +14,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  padding: 20px;
+}
+</style>

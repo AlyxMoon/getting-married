@@ -27,8 +27,8 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  width: 100%;
-  max-width: 700px;
+  width: 95vw;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -48,14 +48,14 @@ li {
   border: 2px solid white;
 
   background-color: white;
-  color: $backgroundColorDarker;
+  color: $primaryColorAccent;
   font-size: 18px;
 
   cursor: pointer;
   transition-duration: 0.3s;
 
   &.active, &:hover {
-    background-color: $backgroundColor;
+    background-color: $primaryColor;
     color: white;
   }
 }

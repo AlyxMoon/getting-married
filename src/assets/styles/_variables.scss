@@ -1,4 +1,3 @@
-@use "~purecss/build/base-min";
 @use 'sass:map';
 
 $breakpoints: (
@@ -24,5 +23,6 @@ $breakpoints: (
   @media screen and (min-width: map.get($breakpoints, "xl")) { @content; }
 }
 
-$backgroundColor: #E4D0E4;
-$backgroundColorDarker: #BF8FBF;
+$primaryColor: #006085;
+$primaryColorAccent: #0079A7;
+$defaultTextShadow: 1px 1px 5px rgba(0, 0, 0, 0.5);

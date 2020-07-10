@@ -28,12 +28,15 @@ header {
 
   margin: 60px auto 30px;
 
-  color: #EEE;
   text-align: center;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: $defaultTextShadow;
 
   h1 {
     margin: 0 30px;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 
   hr {
