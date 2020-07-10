@@ -27,7 +27,10 @@ header {
   justify-content: center;
 
   margin-top: 60px;
+
+  color: #EEE;
   text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 
   h1 {
     margin: 0 30px;

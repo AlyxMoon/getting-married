@@ -1,33 +1,40 @@
 <template>
   <div id="app">
     <Header />
-
-    <!-- <Hero />
-
-    <main>
-      test stuff here
-    </main>
-
-    <Footer /> -->
+    <Navbar
+      :page="page"
+      :links="links"
+      @changePage="page = $event" />
+    <Hero v-if="page === 0" />
 
     <Sunflower />
   </div>
 </template>
 
 <script>
-// import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-// import Hero from '@/components/Hero'
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
 import Sunflower from '@/components/Sunflower'
 
 export default {
   name: 'App',
   components: {
-    // Footer,
     Header,
-    // Hero,
+    Hero,
+    Navbar,
     Sunflower,
   },
+  data: () => ({
+    page: 0,
+    links: [
+      'Home',
+      'Our Story',
+      'Registry',
+      'Events',
+      'RSVP',
+    ],
+  }),
 }
 </script>
 

@@ -1,5 +1,3 @@
-@use "_variables" as *;
-
 html, body, #app {
   height: 100%;
   width: 100%;
@@ -8,10 +6,7 @@ html, body, #app {
 }
 
 body {
-  $primaryColor: #265B6A;
-  $accentColor: #FFD5AA;
-
-  background-color: #E4D0E4;
+  background-color: $backgroundColor;
   position: relative;
   z-index: 1;
 
@@ -24,14 +19,15 @@ body {
     right: 0;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 #app {
   position: relative;
   z-index: 2;
-
-  color: #EEE;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 
   overflow-y: auto;
 }

@@ -134,7 +134,7 @@ export default {
 .vase {
   position:absolute;
   top: 165px;
-  left: 13px;
+  left: 21px;
   height: 0;
   width: 38px;
   border-top: 45px solid #faaa18;
@@ -149,9 +149,11 @@ export default {
 
   &:before {
     background: #F9A018;
-    width: 58px; height: 20px;
-    top: -50px; left: -10px;
-    position:absolute;
+    height: 20px;
+    width: 58px;
+    top: -50px;
+    left: -18px;
+    position: absolute;
     box-shadow: 0 5px 10px -9px black;
     -moz-transform: 0 5px 10px -9px black;
     -ms-transform: 0 5px 10px -9px black;
