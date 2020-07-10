@@ -1,6 +1,10 @@
 <template>
   <section>
     <h2>RSVP</h2>
+
+    <p>
+      When we get RSVP info set up, we'll let you know!
+    </p>
   </section>
 </template>
 
