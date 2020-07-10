@@ -5,7 +5,7 @@
     <div class="rsvp-group">
       <div class="info-wrapper">
         <h3>The Wedding</h3>
-        <p>04.23.2021 | Postlewaits</p>
+        <p>04.25.2021 | Postlewaits</p>
         <button>RSVP</button>
       </div>
 

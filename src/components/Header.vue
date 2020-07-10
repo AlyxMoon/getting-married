@@ -2,7 +2,7 @@
   <header>
     <hr />
     <h2 class="date">
-      04.23.2021
+      04.25.2021
     </h2>
     <h1 class="names">
       Maddy & Allister
