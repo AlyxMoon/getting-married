@@ -23,6 +23,11 @@ $breakpoints: (
   @media screen and (min-width: map.get($breakpoints, "xl")) { @content; }
 }
 
-$primaryColor: #006085;
-$primaryColorAccent: #0079A7;
+$primaryColor: #00567E;
+$primaryColorAccent: lighten($primaryColor, 10);
+$primaryGreen: #87A96B;
+$colorPeony: #9E5E6F;
+$primaryBrown: #6F4E37;
+$white: #FFFAF0;
+
 $defaultTextShadow: 1px 1px 5px rgba(0, 0, 0, 0.5);

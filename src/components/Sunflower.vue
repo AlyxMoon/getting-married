@@ -28,6 +28,11 @@ export default {
 
   bottom: 180px;
   left: 25px;
+
+  display: none;
+  @include lg {
+    display: block;
+  }
 }
 
 .head {

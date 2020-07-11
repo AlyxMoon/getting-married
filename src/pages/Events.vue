@@ -6,7 +6,7 @@
       <div class="info-wrapper">
         <h3>The Wedding</h3>
         <p>04.25.2021 | Postlewaits</p>
-        <button>RSVP</button>
+        <a class="btn" href="mailto:maddyandallister@gmail.com">RSVP</a>
       </div>
 
       <div class="divider" />
@@ -34,7 +34,7 @@ section {
   flex-direction: column;
   align-items: center;
 
-  color: white;
+  color: $white;
   text-align: center;
   text-shadow: $defaultTextShadow;
 
@@ -43,14 +43,17 @@ section {
   }
 
   .divider {
+    height: 3px;
+    width: 100%;
+    margin: 20px 0;
+
+    border-radius: 10px;
+    background-color: $white;
 
     @include lg {
       height: 250px;
       width: 3px;
       margin: 0 20px;
-      border-radius: 10px;
-
-      background-color: white;
     }
   }
 
@@ -59,7 +62,10 @@ section {
     height: 300px;
     margin: 30px 0;
     padding: 5px;
-    border: 2px solid white;
+
+    background-color: $colorPeony;
+    border: 3px solid $white;
+    border-radius: 2px;
 
     @include lg {
       margin: 0;

@@ -27,6 +27,7 @@ header {
   justify-content: center;
 
   margin: 60px auto 30px;
+  max-width: 95vw;
 
   text-align: center;
   text-shadow: $defaultTextShadow;
@@ -43,7 +44,7 @@ header {
     flex-grow: 1;
     margin: 0 20px;
 
-    border: 2px solid white;
+    border: 2px solid $primaryGreen;
     border-radius: 4px;
   }
 }

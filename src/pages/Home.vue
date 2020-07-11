@@ -2,6 +2,7 @@
   <section>
     <div class="img-wrapper">
       <img class="pure-img" src="@/assets/images/rings.jpg" />
+      <div class="img-overlay" />
     </div>
   </section>
 </template>

@@ -35,7 +35,7 @@ nav {
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 0;
   padding: 0;
 
@@ -45,10 +45,10 @@ ul {
 
 li {
   padding: 5px 0;
-  border: 2px solid white;
+  border: 2px solid $white;
 
-  background-color: white;
-  color: $primaryColorAccent;
+  background-color: $white;
+  color: $primaryColor;
   font-size: 18px;
 
   cursor: pointer;
@@ -56,7 +56,11 @@ li {
 
   &.active, &:hover {
     background-color: $primaryColor;
-    color: white;
+    color: $white;
+  }
+
+  &:not(:last-child) {
+    border-right: none;
   }
 }
 </style>
