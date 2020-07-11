@@ -67,6 +67,17 @@ section {
     text-shadow: $defaultTextShadow;
   }
 
+  & > h2 {
+    margin-bottom: 30px;
+
+    font-size: 38px;
+    text-align: center;
+
+    @include lg {
+      text-align: left;
+    }
+  }
+
   p {
     font-size: 20px;
     text-align: center;
