@@ -7,6 +7,10 @@
         <h3>The Wedding</h3>
         <p>04.25.2021 | Postlewaits</p>
         <a class="btn" href="mailto:maddyandallister@gmail.com">RSVP</a>
+
+        <p class="help">
+          Please include your name and the number of people in your party in the RSVP.
+        </p>
       </div>
 
       <div class="divider" />
