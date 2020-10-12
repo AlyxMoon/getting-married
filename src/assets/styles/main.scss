@@ -4,11 +4,13 @@ html, body, #app {
 }
 
 body {
-  padding: 40px 0 100px;
+  padding: 0;
   position: relative;
   z-index: 1;
 
-  background-color: $primaryColor;
+  background: url('../images/robin-blue-wallpaper.jpg');
+  background-repeat: repeat;
+
   color: $white;
   font-family: 'Lora', serif;
 
@@ -57,15 +59,9 @@ main {
 }
 
 section {
-  width: 95vw;
-  max-width: 800px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
-
-  h1, h2, h3, h4, h5, h6, p {
-    color: $white;
-    margin-bottom: 20px;
-    text-shadow: $defaultTextShadow;
-  }
 
   & > h2 {
     margin-bottom: 30px;
@@ -114,6 +110,7 @@ button, .btn {
   }
 }
 
+.hero-wrapper,
 .img-wrapper {
   position: relative;
 
@@ -125,7 +122,13 @@ button, .btn {
     right: 0;
 
     box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.8) inset;
+    background-color: rgba(0, 0, 0, 0.2);
     pointer-events: none;
   }
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: $white;
+  margin-bottom: 20px;
+  text-shadow: $defaultTextShadow;
+}

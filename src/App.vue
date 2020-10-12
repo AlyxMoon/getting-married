@@ -1,46 +1,28 @@
 <template>
   <div id="app">
-    <Header />
-    <Navbar
-      :page="page"
-      :links="links"
-      @changePage="page = $event" />
-
-    <HomePage v-if="page === 0" />
-    <StoryPage v-if="page === 1" />
-    <RegistryPage v-if="page === 2" />
-    <Events v-if="page === 3" />
-
-    <Sunflower />
+    <Hero />
+    <Content>
+      <component :is="pages[page].component"></component>
+    </Content>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Navbar from '@/components/Navbar'
-import Sunflower from '@/components/Sunflower'
+import Content from '@/components/Content'
+import Hero from '@/components/Hero'
 
 import HomePage from '@/pages/Home'
-import StoryPage from '@/pages/Story'
-import RegistryPage from '@/pages/Registry'
-import Events from '@/pages/Events'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Navbar,
-    Sunflower,
-
-    HomePage,
-    StoryPage,
-    RegistryPage,
-    Events,
+    Content,
+    Hero,
   },
   data: () => ({
     page: 0,
-    links: [
-      'Home',
+    pages: [
+      { text: 'Home', component: HomePage },
       'Our Story',
       'Registry',
       'The Day',

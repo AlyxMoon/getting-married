@@ -1,10 +1,7 @@
 <template>
-  <section>
-    <div class="img-wrapper">
-      <img class="pure-img" src="@/assets/images/rings.jpg" />
-      <div class="img-overlay" />
-    </div>
-  </section>
+  <article>
+    Home Page
+  </article>
 </template>
 
 <script>
@@ -13,18 +10,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-
-  div.img-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
