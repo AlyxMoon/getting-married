@@ -6,9 +6,7 @@
       :page.sync="page"
     />
 
-    <Content>
-      <component :is="pages[page].component"></component>
-    </Content>
+    <Content />
   </div>
 </template>
 
@@ -16,8 +14,6 @@
 import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
-
-import HomePage from '@/pages/Home'
 
 export default {
   name: 'App',
@@ -29,10 +25,11 @@ export default {
   data: () => ({
     page: 0,
     pages: [
-      { text: 'Home', component: HomePage },
-      { text: 'Event', component: HomePage },
-      { text: 'Photos', component: HomePage },
-      { text: 'Registry', component: HomePage },
+      { text: 'Home', link: '#home' },
+      { text: 'Event', link: '#event' },
+      { text: 'Registry', link: '#registry' },
+      { text: 'Our Story', link: '#story' },
+      { text: 'Photos', link: '#photos' },
     ],
   }),
 }

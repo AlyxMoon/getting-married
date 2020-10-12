@@ -19,52 +19,74 @@ body {
   }
 }
 
+main {
+  min-height: 600px;
+  width: 700px;
+  max-width: 90vw;
+
+  margin: 40px auto;
+  padding: 20px 0;
+
+  background-image: url('../images/vintage-dark-blue-wallpaper.png');
+  background-repeat: repeat;
+  border-radius: 4px;
+  box-shadow: 0px 5px 20px 3px #2A335A;
+
+  @include lg {
+    min-height: 900px;
+    width: 1100px;
+
+    padding: 40px 0;
+  }
+}
+
+section {
+  max-width: 95%;
+  margin: auto;
+  padding: 0 5% 30px;
+
+  &.full {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $white;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: $defaultTextShadow;
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
+  line-height: 1.5em;
   margin: 0;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 52px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 28px;
 }
 
-#app {
-  position: relative;
-  z-index: 2;
-}
+p {
+  max-width: 80%;
+  margin: 20px auto;
 
-section {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-
-  & > h2 {
-    margin-bottom: 30px;
-
-    font-size: 38px;
-    text-align: center;
-
-    @include lg {
-      text-align: left;
-    }
-  }
-
-  p {
-    font-size: 20px;
-    text-align: center;
-
-    &.help {
-      font-size: 15px;
-    }
-  }
+  letter-spacing: 0.2px;
+  line-height: 1.3em;
 }
 
 button, .btn {
@@ -93,7 +115,6 @@ button, .btn {
   }
 }
 
-.hero-wrapper,
 .img-wrapper {
   position: relative;
 
@@ -108,10 +129,4 @@ button, .btn {
     background-color: rgba(0, 0, 0, 0.2);
     pointer-events: none;
   }
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  color: $white;
-  margin-bottom: 20px;
-  text-shadow: $defaultTextShadow;
 }

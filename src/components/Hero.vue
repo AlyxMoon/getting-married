@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-wrapper">
+  <div class="img-wrapper hero">
     <h1>We're Getting Married!</h1>
     <div class="img-overlay" />
   </div>
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div.hero-wrapper {
+.hero {
   height: 300px;
   width: 100%;
 

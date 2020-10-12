@@ -23,6 +23,13 @@ $breakpoints: (
   @media screen and (min-width: map.get($breakpoints, "xl")) { @content; }
 }
 
+@mixin gridPos ($colS, $colE, $rowS, $rowE) {
+  grid-column-start: $colS;
+  grid-column-end: $colE;
+  grid-row-start: $rowS;
+  grid-row-end: $rowE;
+}
+
 $primaryColor: #2A335A;
 $primaryColorAccent: lighten($primaryColor, 10);
 $primaryGreen: #87A96B;
