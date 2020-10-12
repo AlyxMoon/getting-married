@@ -41,23 +41,6 @@ h3 {
   z-index: 2;
 }
 
-nav, footer, header, main {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-
-  @include sm { max-width: 540px; }
-  @include md { max-width: 600px; }
-  @include lg { max-width: 800px; }
-  @include xl { max-width: 1000px; }
-
-  position: relative;
-}
-
-main {
-  min-height: 400px;
-}
-
 section {
   box-sizing: border-box;
   width: 100%;

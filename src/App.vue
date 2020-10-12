@@ -1,6 +1,11 @@
 <template>
   <div id="app">
     <Hero />
+    <Navbar
+      :links="pages"
+      :page.sync="page"
+    />
+
     <Content>
       <component :is="pages[page].component"></component>
     </Content>
@@ -10,6 +15,7 @@
 <script>
 import Content from '@/components/Content'
 import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
 
 import HomePage from '@/pages/Home'
 
@@ -18,14 +24,15 @@ export default {
   components: {
     Content,
     Hero,
+    Navbar,
   },
   data: () => ({
     page: 0,
     pages: [
       { text: 'Home', component: HomePage },
-      'Our Story',
-      'Registry',
-      'The Day',
+      { text: 'Event', component: HomePage },
+      { text: 'Photos', component: HomePage },
+      { text: 'Registry', component: HomePage },
     ],
   }),
 }

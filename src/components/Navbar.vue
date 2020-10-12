@@ -3,10 +3,10 @@
     <ul class="menu">
       <li
         v-for="(link, index) of links"
-        :key="link"
+        :key="link.text"
         :class="{ active: page === index }"
-        @click="$emit('changePage', index)">
-        {{ link }}
+        @click="$emit('update:page', index)">
+        {{ link.text }}
       </li>
     </ul>
   </nav>
@@ -27,9 +27,10 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  width: 95vw;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -46,16 +47,14 @@ ul {
 li {
   padding: 5px 0;
   border: 2px solid $white;
-
-  background-color: $white;
-  color: $primaryColor;
-  font-size: 18px;
+  color: black;
+  font-size: 20px;
 
   cursor: pointer;
   transition-duration: 0.3s;
 
   &.active, &:hover {
-    background-color: $primaryColor;
+    background-color: $primaryColorAccent;
     color: $white;
   }
 
