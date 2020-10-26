@@ -39,13 +39,5 @@ header {
   h2 {
     font-size: 24px;
   }
-
-  hr {
-    flex-grow: 1;
-    margin: 0 20px;
-
-    border: 2px solid $primaryGreen;
-    border-radius: 4px;
-  }
 }
 </style>
