@@ -110,7 +110,7 @@ ul {
 li {
   padding: 5px 0;
 
-  background-color: #80CCDD;
+  background-color: $backColor;
   color: black;
   font-size: 18px;
 

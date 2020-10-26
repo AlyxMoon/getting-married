@@ -6,7 +6,7 @@
       :page.sync="page"
     />
 
-    <Content />
+    <Content :registries="registries" />
   </div>
 </template>
 
@@ -30,6 +30,20 @@ export default {
       { text: 'Registry', link: '#registry' },
       { text: 'Our Story', link: '#story' },
       { text: 'Photos', link: '#photos' },
+    ],
+    registries: [
+      {
+        name: 'Macy\'s',
+        link: 'https://www.macys.com/wgl/registry/guest/2412509',
+      },
+      {
+        name: 'Bed Bath & Beyond',
+        link: 'https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549550332?eventType=Wedding',
+      },
+      {
+        name: 'Target',
+        link: 'https://www.target.com/gift-registry/giftgiver?registryId=986943dd092b43ca8d1a709aa6b92964',
+      },
     ],
   }),
 }

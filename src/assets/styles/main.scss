@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 20px;
   text-align: center;
   text-shadow: $defaultTextShadow;
+
+  &::selection {
+    background-color: $primaryColorHighlight;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,7 +103,7 @@ button, .btn {
   padding: 5px 10px;
   border: 3px solid $white;
 
-  background-color: $colorPeony;
+  background-color: $primaryColorAccent;
   font-size: 28px;
   font-weight: bold;
   color: $white;
@@ -111,7 +115,7 @@ button, .btn {
   transition-duration: 0.3s;
 
   &:hover {
-    background-color: lighten($colorPeony, 10);
+    background-color: $primaryColor;
   }
 }
 
