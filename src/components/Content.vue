@@ -31,6 +31,10 @@
           >See Registry</a>
         </template>
       </div>
+
+      <p>
+        If you aren't sure what to get, gift cards to Target, Macy's, Powell's, or Etsy are welcome.
+      </p>
     </section>
 
     <hr />
