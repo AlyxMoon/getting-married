@@ -33,16 +33,16 @@ export default {
     ],
     registries: [
       {
-        name: 'Macy\'s',
-        link: 'https://www.macys.com/wgl/registry/guest/2412509',
+        name: 'Target',
+        link: 'https://www.target.com/gift-registry/giftgiver?registryId=986943dd092b43ca8d1a709aa6b92964',
       },
       {
         name: 'Bed Bath & Beyond',
         link: 'https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549550332?eventType=Wedding',
       },
       {
-        name: 'Target',
-        link: 'https://www.target.com/gift-registry/giftgiver?registryId=986943dd092b43ca8d1a709aa6b92964',
+        name: 'Macy\'s',
+        link: 'https://www.macys.com/wgl/registry/guest/2412509',
       },
     ],
   }),
